@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lg" 
+    tools:context="com.mattih.studentactivitymanagemet.Login_Activity">
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="40dp"
+        android:background="#000"
+        android:text="Login"
+        android:textColor="#faa" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_userName"
+        android:layout_alignRight="@+id/et_userName"
+        android:layout_below="@+id/et_userName"
+        android:layout_marginTop="22dp"
+        android:contentDescription="input"
+        android:ems="10"
+        android:hint="your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="30dp"
+        android:background="#f00"
+        android:text="Signup"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/et_userName"
+        style="@style/styleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:contentDescription="input"
+        android:ems="10"
+        android:hint="your id"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/forgot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_cancel"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/hover"
+        android:text="Forgot Password"
+        android:textColor="#000" />
+
+</RelativeLayout>

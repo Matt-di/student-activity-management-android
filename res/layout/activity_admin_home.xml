@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context="com.mattih.studentactivitymanagemet.AdminHome">
+
+    <Button
+        android:id="@+id/view_st_ativity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_style"
+        android:text="@string/view_student_activiy" />
+
+    <Button
+        android:id="@+id/self_account_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_st_ativity_btn"
+        android:background="@drawable/btn_style"
+        android:text="Your Account" />
+
+    <Button
+        android:id="@+id/manage_student_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/self_account_btn"
+        android:background="@drawable/btn_style"
+        android:text="Manage Student" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="#3afafa"
+        android:text="Management Pge"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/manage_student_btn"
+        android:layout_marginRight="14dp"
+        android:text="Pop" />
+
+</RelativeLayout>

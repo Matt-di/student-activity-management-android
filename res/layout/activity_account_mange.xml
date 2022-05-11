@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mattih.studentactivitymanagemet.StudentManage" >
+
+    <EditText
+        android:id="@+id/et_admin_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:hint="enter id" />
+
+    <EditText
+        android:id="@+id/et_admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_admin_id"
+        android:layout_below="@+id/et_admin_id"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="enter name" />
+
+    <EditText
+        android:id="@+id/et_admin_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_admin_name"
+        android:layout_below="@+id/et_admin_name"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="enter password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/ad_upd_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/update_btn_tex" />
+
+    <TextView
+        android:id="@+id/ac_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ad_ans"
+        android:layout_centerVertical="true"
+        android:text="Security Question"
+        android:textColor="#f00" />
+
+    <Button
+        android:id="@+id/ad_ins_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ad_upd_btn"
+        android:layout_toRightOf="@+id/ad_upd_btn"
+        android:text="@string/insert_text_btn" />
+
+    <Button
+        android:id="@+id/ad_del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ad_ins_btn"
+        android:layout_alignTop="@+id/ad_ins_btn"
+        android:layout_toRightOf="@+id/ad_ins_btn"
+        android:text="@string/delete_btn_text" />
+
+    <EditText
+        android:id="@+id/ad_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/et_admin_pass"
+        android:layout_below="@+id/ac_name"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="enter the name you love most"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/ad_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ad_del_btn"
+        android:layout_alignBottom="@+id/ad_del_btn"
+        android:layout_toRightOf="@+id/ad_del_btn"
+        android:text="View" />
+
+</RelativeLayout>
